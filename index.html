@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
     <link
       rel="icon"
@@ -11,15 +12,152 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://use.fontawesome.com/4ac2e5dc4b.js"></script>
   </head>
   <body>
-    Social Media Dashboard Total Followers: 23,004 Dark Mode @nathanf 1987
-    Followers 12 Today @nathanf 1044 Followers 99 Today @realnathanf 11k
-    Followers 1099 Today Nathan F. 8239 Subscribers 144 Today Overview - Today
-    Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
-    Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12%
+    <main>
+      <div class="top">
+        <div class="top__container container">
+          <div class="top__content">
+            <div class="top__title">Social Media Dashboard</div>
+            <div class="top__para">Total Followers: 23,004</div>
+          </div>
+          <div class="top__switch-theme">
+            <p class="top__theme-switcher-label">Dark Mode</p>
+            <input
+              type="checkbox"
+              name=""
+              id=""
+              class="top__theme-swither-input"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="stats container">
+        <div class="stats__card card">
+          <div class="stats__social">
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+            <div class="handle">@nathanf</div>
+          </div>
+          <div class="stats__followers">
+            <h3 class="stats__followers-number">1987</h3>
+            <p class="stats__followers-label">Followers</p>
+          </div>
+          <div class="stats__indicator stats__indicator--up">12 Today</div>
+        </div>
+
+        <div class="stats__card card">
+          <div class="stats__social">
+            <img src="./images/icon-twitter.svg" alt="twiiter" />
+            <div class="handle">@nathanf</div>
+          </div>
+          <div class="stats__followers">
+            <h3 class="stats__followers-number">1044</h3>
+            <p class="stats__followers-label">Followers</p>
+          </div>
+          <div class="stats__indicator stats__indicator--up">99 Today</div>
+        </div>
+
+        <div class="stats__card card">
+          <div class="stats__social">
+            <img src="./images/icon-instagram.svg" alt="instagram" />
+            <div class="handle">@nathanf</div>
+          </div>
+          <div class="stats__followers">
+            <h3 class="stats__followers-number">11k</h3>
+            <p class="stats__followers-label">Followers</p>
+          </div>
+          <div class="stats__indicator stats__indicator--up">1099 Today</div>
+        </div>
+
+        <div class="stats__card card">
+          <div class="stats__social">
+            <img src="./images/icon-youtube.svg" alt="youtube" />
+            <div class="handle">@nathanf</div>
+          </div>
+          <div class="stats__followers">
+            <h3 class="stats__followers-number">8239</h3>
+            <p class="stats__followers-label">Subscribers</p>
+          </div>
+          <div class="stats__indicator stats__indicator--down">144 Today</div>
+        </div>
+      </div>
+      <div class="overview container">
+        <h3 class="overview__title">Overview - Today</h3>
+        <div class="overview__container">
+          <div class="overview__card card">
+            <p class="overview__metric">Page Views</p>
+            <div class="overview__social">
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+            </div>
+            <p class="overview__count">87</p>
+            <div class="overview__indicator overview__indicator--up">3%</div>
+          </div>
+          <div class="overview__card card">
+            <p class="overview__metric">Likes</p>
+            <div class="overview__social">
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+            </div>
+            <p class="overview__count">52</p>
+            <div class="overview__indicator overview__indicator--down">2%</div>
+          </div>
+          <div class="overview__card card">
+            <p class="overview__metric">Likes</p>
+            <div class="overview__social">
+              <img src="./images/icon-instagram.svg" alt="instagram" />
+            </div>
+            <p class="overview__count">5462</p>
+            <div class="overview__indicator overview__indicator--up">5462%</div>
+          </div>
+          <div class="overview__card card">
+            <p class="overview__metric">Profile Views</p>
+            <div class="overview__social">
+              <img src="./images/icon-instagram.svg" alt="instagram" />
+            </div>
+            <p class="overview__count">52K</p>
+            <div class="overview__indicator overview__indicator--up">1375%</div>
+          </div>
+          <div class="overview__card card">
+            <p class="overview__metric">Retweets</p>
+            <div class="overview__social">
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+            </div>
+            <p class="overview__count">117</p>
+            <div class="overview__indicator overview__indicator--up">%303</div>
+          </div>
+          <div class="overview__card card">
+            <p class="overview__metric">Likes</p>
+            <div class="overview__social">
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+            </div>
+            <p class="overview__count">507</p>
+            <div class="overview__indicator overview__indicator--up">553%</div>
+          </div>
+          <div class="overview__card card">
+            <p class="overview__metric">Likes</p>
+            <div class="overview__social">
+              <img src="./images/icon-youtube.svg" alt="youtube" />
+            </div>
+            <p class="overview__count">107</p>
+            <div class="overview__indicator overview__indicator--down">19%</div>
+          </div>
+          <div class="overview__card card">
+            <p class="overview__metric">Total Views</p>
+            <div class="overview__social">
+              <img src="./images/icon-youtube.svg" alt="youtube" />
+            </div>
+            <p class="overview__count">1407</p>
+            <div class="overview__indicator overview__indicator--down">12%</div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
 

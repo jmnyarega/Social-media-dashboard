@@ -1,0 +1,85 @@
+.stats {
+    margin-top: -2rem;
+    text-align: center;
+
+    &__card + &__card {
+        margin-top: 1rem;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .handle {
+            font-weight: bold;
+            opacity: 0.7;
+        }
+    }
+
+    &__followers {
+        padding-top: 1rem;
+    }
+
+    &__followers-number {
+        font-size: 3rem;
+    }
+
+    &__followers-label {
+        text-transform: uppercase;
+        opacity: 0.7;
+    }
+
+    &__indicator {
+        padding-top: 1rem;
+        font-size: 0.7rem;
+        font-weight: bold;
+
+        &--up {
+            color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 0.5rem;
+        }
+
+        &--up::before {
+            content: "";
+            background: no-repeat url(../images/icon-up.svg);
+            height: 4px;
+            width: 8px;
+        }
+
+        &--down {
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 0.5rem;
+        }
+
+        &--down::before {
+            content: "";
+            background: no-repeat url(../images/icon-down.svg);
+            height: 4px;
+            width: 8px;
+        }
+
+    }
+}
+
+@media (min-width: 500px) {
+    .stats {
+        display: flex;
+        column-gap: 2rem;
+        justify-content: space-between;
+
+        &__card {
+            min-width: 23%;
+        }
+
+        &__card + &__card {
+            margin-top: 0;
+        }
+    }
+}

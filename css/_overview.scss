@@ -1,0 +1,81 @@
+.overview {
+    margin-top: 2rem;
+
+    &__title {
+       font-size: 1.7rem;
+       opacity: 0.5;
+    }
+
+    &__card {
+        display: grid;
+        justify-content: space-between;
+        gap: 1rem;
+        grid-template-areas: "a b" "c d";
+    }
+
+    &__card {
+     margin-top: 1rem;
+    }
+
+    &__metric {
+        grid-area: a;
+       font-weight: bold;
+       opacity: 0.7;
+    }
+
+    &__social {
+        grid-area: b;
+    }
+
+    &__count {
+        grid-area: c;
+       font-size: 2rem;
+       font-weight: bold;
+    }
+
+    &__indicator {
+        grid-area: d;
+        font-size: 0.7rem;
+        font-weight: bold;
+
+        &--up {
+            color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 0.5rem;
+        }
+
+        &--up::before {
+            content: "";
+            background: no-repeat url(../images/icon-up.svg);
+            height: 4px;
+            width: 8px;
+        }
+
+        &--down {
+            color: red;
+            display: flex;
+            column-gap: 0.1rem;
+            align-items: center;
+        }
+
+        &--down::before {
+            content: "";
+            background: no-repeat url(../images/icon-down.svg);
+            height: 4px;
+            width: 8px;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .overview {
+        &__container {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}
