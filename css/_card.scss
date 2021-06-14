@@ -1,7 +1,5 @@
 .card {
-    padding: 1rem;
-    background-color: lightgreen;
+    padding: $padding-card;
+    background-color: var(--accent-color-1);
     border-radius: 0.5rem;
-
-    border-top: 3px solid red;
 }

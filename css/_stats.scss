@@ -2,6 +2,34 @@
     margin-top: -2rem;
     text-align: center;
 
+    &__card {
+        cursor: pointer;
+    }
+
+    &__card--facebook {
+        border-top: 3px solid $facebook;
+    }
+
+    &__card--twitter {
+        border-top: 3px solid $twitter;
+    }
+
+    &__card--instagram {
+        padding: 3px 0 0 !important;
+
+        background: $instagram;
+        > div {
+            background-color: var(--accent-color-1);
+            padding: calc(1rem + 1.5px);
+            margin-bottom: 0;
+            border-radius: 0.45rem;
+        }
+    }
+
+    &__card--youtube {
+        border-top: 3px solid $youtube;
+    }
+
     &__card + &__card {
         margin-top: 1rem;
     }
@@ -27,7 +55,7 @@
 
     &__followers-label {
         text-transform: uppercase;
-        opacity: 0.7;
+        color: var(--light-accent-color);
     }
 
     &__indicator {
@@ -36,7 +64,7 @@
         font-weight: bold;
 
         &--up {
-            color: green;
+            color: $lime-green;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -51,7 +79,7 @@
         }
 
         &--down {
-            color: red;
+            color: $bright-red;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -73,6 +101,8 @@
         display: flex;
         column-gap: 2rem;
         justify-content: space-between;
+
+        margin-top: -5rem;
 
         &__card {
             min-width: 23%;

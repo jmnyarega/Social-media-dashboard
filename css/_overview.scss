@@ -2,8 +2,8 @@
     margin-top: 2rem;
 
     &__title {
-       font-size: 1.7rem;
-       opacity: 0.5;
+        font-size: 1.7rem;
+        color: var(--light-accent-color);
     }
 
     &__card {
@@ -11,20 +11,23 @@
         justify-content: space-between;
         gap: 1rem;
         grid-template-areas: "a b" "c d";
+
+        cursor: pointer;
     }
 
-    &__card {
-     margin-top: 1rem;
+    &__card + &__card {
+        margin-top: 1rem;
     }
 
     &__metric {
         grid-area: a;
-       font-weight: bold;
-       opacity: 0.7;
+        font-weight: bold;
+        color: var(--light-accent-color);
     }
 
     &__social {
         grid-area: b;
+        justify-self: end;
     }
 
     &__count {
@@ -39,7 +42,7 @@
         font-weight: bold;
 
         &--up {
-            color: green;
+            color: $lime-green;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -54,7 +57,7 @@
         }
 
         &--down {
-            color: red;
+            color: $bright-red;
             display: flex;
             column-gap: 0.1rem;
             align-items: center;
@@ -76,6 +79,12 @@
             gap: 2rem;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(2, 1fr);
+
+            margin-top: 1rem;
+        }
+
+        &__card + &__card {
+            margin: 0;
         }
     }
 }

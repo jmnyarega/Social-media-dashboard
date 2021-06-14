@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <script src="https://use.fontawesome.com/4ac2e5dc4b.js"></script>
   </head>
-  <body>
+  <body id="body">
     <main>
       <div class="top">
         <div class="top__container container">
@@ -32,15 +32,15 @@
             <p class="top__theme-switcher-label">Dark Mode</p>
             <input
               type="checkbox"
-              name=""
-              id=""
-              class="top__theme-swither-input"
+              name="theme-switcher"
+              id="theme-switcher"
+              class="top__theme-switcher-input"
             />
           </div>
         </div>
       </div>
       <div class="stats container">
-        <div class="stats__card card">
+        <div class="stats__card stats__card--facebook card">
           <div class="stats__social">
             <img src="./images/icon-facebook.svg" alt="facebook" />
             <div class="handle">@nathanf</div>
@@ -52,7 +52,7 @@
           <div class="stats__indicator stats__indicator--up">12 Today</div>
         </div>
 
-        <div class="stats__card card">
+        <div class="stats__card stats__card--twitter card">
           <div class="stats__social">
             <img src="./images/icon-twitter.svg" alt="twiiter" />
             <div class="handle">@nathanf</div>
@@ -64,19 +64,21 @@
           <div class="stats__indicator stats__indicator--up">99 Today</div>
         </div>
 
-        <div class="stats__card card">
-          <div class="stats__social">
-            <img src="./images/icon-instagram.svg" alt="instagram" />
-            <div class="handle">@nathanf</div>
+        <div class="stats__card card stats__card--instagram">
+          <div>
+            <div class="stats__social">
+              <img src="./images/icon-instagram.svg" alt="instagram" />
+              <div class="handle">@nathanf</div>
+            </div>
+            <div class="stats__followers">
+              <h3 class="stats__followers-number">11k</h3>
+              <p class="stats__followers-label">Followers</p>
+            </div>
+            <div class="stats__indicator stats__indicator--up">1099 Today</div>
           </div>
-          <div class="stats__followers">
-            <h3 class="stats__followers-number">11k</h3>
-            <p class="stats__followers-label">Followers</p>
-          </div>
-          <div class="stats__indicator stats__indicator--up">1099 Today</div>
         </div>
 
-        <div class="stats__card card">
+        <div class="stats__card stats__card--youtube card">
           <div class="stats__social">
             <img src="./images/icon-youtube.svg" alt="youtube" />
             <div class="handle">@nathanf</div>
@@ -158,6 +160,6 @@
         </div>
       </div>
     </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>
-
