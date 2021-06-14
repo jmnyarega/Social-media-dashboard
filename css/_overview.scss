@@ -6,13 +6,20 @@
         color: var(--light-accent-color);
     }
 
+    &__container {
+        margin-top: 1rem;
+    }
+
     &__card {
         display: grid;
         justify-content: space-between;
         gap: 1rem;
         grid-template-areas: "a b" "c d";
-
         cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 
     &__card + &__card {
@@ -70,6 +77,7 @@
             width: 8px;
         }
     }
+
 }
 
 @media (min-width: 500px) {

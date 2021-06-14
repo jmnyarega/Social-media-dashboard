@@ -1,20 +1,22 @@
 :root {
-  --light: hsl(230, 22%, 74%);
   --dark-background-color: hsl(230, 17%, 14%);
   --dark-card-color: hsl(232, 19%, 15%);
   --dark-accent-color-1: hsl(228, 28%, 20%);
   --dark-accent-color: hsl(228, 34%, 66%);
   --dark-primary-color: hsl(0, 0%, 100%);
+  --dark-checkbox-background: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --light-background-color: hsl(0, 0%, 100%);
   --light-card-color: hsl(225, 100%, 98%);
   --light-accent-color-1: hsl(227, 47%, 96%);
   --light-accent-color: hsl(228, 12%, 44%);
   --light-primary-color: hsl(230, 17%, 14%);
+  --light-checkbox-background: hsl(230, 22%, 74%);
   --background-color: hsl(0, 0%, 100%);
   --card-color: hsl(225, 100%, 98%);
   --accent-color-1: hsl(227, 47%, 96%);
   --accent-color: hsl(228, 12%, 44%);
-  --primary-color: hsl(230, 17%, 14%); }
+  --primary-color: hsl(230, 17%, 14%);
+  --checkbox-background: hsl(230, 22%, 74%); }
 
 html {
   box-sizing: border-box; }
@@ -148,12 +150,16 @@ body {
   .overview__title {
     font-size: 1.7rem;
     color: var(--light-accent-color); }
+  .overview__container {
+    margin-top: 1rem; }
   .overview__card {
     display: grid;
     justify-content: space-between;
     gap: 1rem;
     grid-template-areas: "a b" "c d";
     cursor: pointer; }
+    .overview__card:hover {
+      opacity: 0.8; }
   .overview__card + .overview__card {
     margin-top: 1rem; }
   .overview__metric {
@@ -207,3 +213,27 @@ body {
   padding: 1rem;
   background-color: var(--accent-color-1);
   border-radius: 0.5rem; }
+
+.checkbox {
+  width: 3.5rem;
+  height: 1.5rem;
+  background: var(--checkbox-background);
+  border-radius: 9rem;
+  position: relative; }
+  .checkbox__dot {
+    background: var(--background-color);
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin: 0.25rem 0;
+    position: absolute;
+    left: 0.25rem;
+    transition: all ease-in-out 350ms; }
+
+input {
+  position: absolute;
+  opacity: 0; }
+
+input:checked + .checkbox label {
+  transform: translateX(2rem);
+  transition: all ease-in-out 350ms; }
