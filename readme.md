@@ -25,16 +25,14 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop-Dark](./design/screenshots/desktop-dark.png)
-![Mobile-Dark](./design/screenshots/mobile-dark.png)
+![Desktop-Dark](./design/screenshots/desktop-dark.png) ![Mobile-Dark](./design/screenshots/mobile-dark.png)
 
-![Desktop-Dark](./design/screenshots/desktop-light.png)
-![Mobile-Dark](./design/screenshots/mobile-light.png)
+![Desktop-Dark](./design/screenshots/desktop-light.png) ![Mobile-Dark](./design/screenshots/mobile-light.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here](https://social-media-dashboard-bay-eight.vercel.app/)
+- Solution URL: [solution URL](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H/hub/socialmediadashboard-zaJYwjUI3)
+- Live Site URL: [live site URL](https://social-media-dashboard-bay-eight.vercel.app/)
 
 ## My process
 
@@ -47,3 +45,5 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
+  - Learned how to get css custom properties via javascript using
+    [getComputedStyle](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
