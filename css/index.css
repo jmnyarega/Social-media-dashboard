@@ -1,22 +1,10 @@
 :root {
-  --dark-background-color: hsl(230, 17%, 14%);
-  --dark-card-color: hsl(232, 19%, 15%);
-  --dark-accent-color-1: hsl(228, 28%, 20%);
-  --dark-accent-color: hsl(228, 34%, 66%);
-  --dark-primary-color: hsl(0, 0%, 100%);
-  --dark-checkbox-background: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-  --light-background-color: hsl(0, 0%, 100%);
-  --light-card-color: hsl(225, 100%, 98%);
-  --light-accent-color-1: hsl(227, 47%, 96%);
-  --light-accent-color: hsl(228, 12%, 44%);
-  --light-primary-color: hsl(230, 17%, 14%);
-  --light-checkbox-background: hsl(230, 22%, 74%);
-  --background-color: hsl(0, 0%, 100%);
-  --card-color: hsl(225, 100%, 98%);
-  --accent-color-1: hsl(227, 47%, 96%);
-  --accent-color: hsl(228, 12%, 44%);
-  --primary-color: hsl(230, 17%, 14%);
-  --checkbox-background: hsl(230, 22%, 74%); }
+  --background-color: hsl(230, 17%, 14%);
+  --card-color: hsl(232, 19%, 15%);
+  --accent-color-1: hsl(228, 28%, 20%);
+  --accent-color: hsl(228, 34%, 66%);
+  --primary-color: hsl(0, 0%, 100%);
+  --checkbox-background: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); }
 
 html {
   box-sizing: border-box; }

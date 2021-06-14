@@ -1,4 +1,4 @@
-# Frontend Mentor - Social media dashboard with theme switcher solution
+[#](#) Frontend Mentor - Social media dashboard with theme switcher solution
 
 This is a solution to the [Social media dashboard with theme switcher challenge on Frontend
 Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor
@@ -25,13 +25,16 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./design/screenshots/desktop.png)
-![Mobile](./design/screenshots/mobile.png)
+![Desktop-Dark](./design/screenshots/desktop-dark.png)
+![Mobile-Dark](./design/screenshots/mobile-dark.png)
+
+![Desktop-Dark](./design/screenshots/desktop-light.png)
+![Mobile-Dark](./design/screenshots/mobile-light.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here]()
+- Live Site URL: [Add live site URL here](https://social-media-dashboard-bay-eight.vercel.app/)
 
 ## My process
 
@@ -42,6 +45,5 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
 
 ### What I learned
